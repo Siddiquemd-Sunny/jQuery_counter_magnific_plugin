@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main {
+    width: 1200px;
+    margin: 100px auto;
+    background-color: teal;
+    color: #fff;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+    font-size: 40px;
+    text-align: center;
+    color: burlywood;
+    padding: 20px;
+    text-transform: capitalize;
+}
+.counter_up {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+}
+
+.single_counter {
+    width: 25%;
+    text-align: center;
+    font-size: 29px;
+    text-transform: capitalize;
+    font-weight: 700;
+    padding: 40px;
+}
+
+.single_counter span {
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Magnific popup */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+}
+
+.single_gellery {
+    width: 30%;
+}
+
+.single_gellery img {
+    width: 100%;
+}

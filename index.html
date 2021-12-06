@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery plugin</title>
+    <link rel="stylesheet" href="asssect/css/magnific.css">
+    <link rel="stylesheet" href="asssect/css/style.css">
+</head>
+<body>
+
+    <!-- counter up plugin -->
+   <div class="main">
+       <h2>Counter Up plugin</h2>
+       <div class="counter_up">
+           <div class="single_counter"><h4><span class="counter">220</span>complete project</h4></div>
+           <div class="single_counter"><h4><span class="counter">50</span>total employe</h4> </div>
+           <div class="single_counter"><h4><span class="counter">143798</span>line of code</h4></div>
+           <div class="single_counter"><h4><span class="counter">210</span>customer review</h4></div>
+       </div>
+   </div>
+
+
+   <!-- Magnific popup plugin -->
+
+   <div class="main">
+       <h2>magniifc popup</h2>
+       <div class="gallery">
+           <div class="single_gellery">
+               <a class="magnific_popup" href="asssect/image/service1.jpg">
+                   <img src="asssect/image/service1.jpg" alt="">
+               </a>
+           </div>
+           <div class="single_gellery">
+               <a class="magnific_popup"  href="asssect/image/service2.jpg">
+                   <img src="asssect/image/service2.jpg" alt="">
+               </a>
+           </div>
+           <div class="single_gellery">
+               <a class="magnific_popup"  href="asssect/image/service3.jpg">
+                   <img src="asssect/image/service3.jpg" alt="">
+               </a>
+           </div>
+       </div>
+       <br><br><br><br><br>
+       <h2>Video gallery</h2>
+       <div class="gallery">
+        <div class="single_gellery">
+            <a class="magnific_popup_video" href="https://www.youtube.com/watch?v=VLyktW15HXI">
+                <img src="asssect/image/service1.jpg" alt="">
+            </a>
+        </div>
+        <div class="single_gellery">
+            <a class="magnific_popup_video"  href="https://www.youtube.com/watch?v=svthOetNi5k">
+                <img src="asssect/image/service2.jpg" alt="">
+            </a>
+        </div>
+        <div class="single_gellery">
+            <a class="magnific_popup_video"  href="https://www.youtube.com/watch?v=5R06LRdUCSE">
+                <img src="asssect/image/service3.jpg" alt="">
+            </a>
+        </div>
+    </div>
+   </div>
+
+
+    <!-- js link -->
+    <script src="asssect/js/jQuery.min.js"></script>
+    <script src="asssect/js/waypoint.js"></script>
+    <script src="asssect/js/counter-up.js"></script>
+    <script src="asssect/js/magnific.js"></script>
+    <script>
+       $(document).ready(function(){
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+        });
+        $('.magnific_popup').magnificPopup({
+            type: 'image',
+            gallery: {
+            enabled: true
+            },
+    
+        });
+        $('.magnific_popup_video').magnificPopup({
+            type: 'iframe',
+            gallery: {
+            enabled: true
+            },
+    
+        });
+       });
+
+       
+
+    </script>
+
+ 
+
+</script>
+</body>
+</html>
+
+
